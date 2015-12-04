@@ -13,7 +13,7 @@ puts "Number: #{number}, Digest: #{md5.hexdigest(input + number.to_s)}"
 
 # Part 2
 
-number = 0
+number = 1
 
 until /^0{6}/.match(md5.hexdigest(input + number.to_s)) do
   number += 1
